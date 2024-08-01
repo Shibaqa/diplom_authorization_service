@@ -142,3 +142,46 @@ PATCH \ PUT: [http://127.0.0.1:8000/users/update/<телефон_пользов�
     "someone_invite_code": "v7a7re"
 }
 ```
+
+Покрытие тестами
+
+```
+Name                                     Stmts   Miss  Cover
+------------------------------------------------------------
+config\__init__.py                           2      0   100%
+config\asgi.py                               4      4     0%
+config\celery.py                             7      0   100%
+config\settings.py                          40      0   100%
+config\urls.py                               9      0   100%
+config\wsgi.py                               4      4     0%
+login_ui\__init__.py                         0      0   100%
+login_ui\admin.py                            1      0   100%
+login_ui\apps.py                             4      0   100%
+login_ui\migrations\__init__.py              0      0   100%
+login_ui\models.py                           1      0   100%
+login_ui\tests.py                            1      0   100%
+login_ui\urls.py                             6      0   100%
+login_ui\utils\profile_view.py              22     16    27%
+login_ui\utils\verify_view.py                3      1    67%
+login_ui\views.py                           54     31    43%
+manage.py                                   12      2    83%
+users\__init__.py                            0      0   100%
+users\admin.py                               5      0   100%
+users\apps.py                                4      0   100%
+users\migrations\0001_initial.py             7      0   100%
+users\migrations\__init__.py                 0      0   100%
+users\models.py                             15      1    93%
+users\permissions.py                         6      0   100%
+users\serializers.py                        15      0   100%
+users\tasks.py                              14      6    57%
+users\tests.py                             105      0   100%
+users\urls.py                                5      0   100%
+users\utils\doc.py                          10      0   100%
+users\utils\login_api_view.py                8      0   100%
+users\utils\profile_update_api_view.py      10      2    80%
+users\utils\utils.py                        27      0   100%
+users\validators.py                         12      0   100%
+users\views.py                              89      9    90%
+------------------------------------------------------------
+TOTAL                                      502     76    85%
+```
